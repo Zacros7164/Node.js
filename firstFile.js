@@ -40,6 +40,7 @@ const http = require('http');
 const fs = require('fs');
 
 const server = http.createServer((req,res)=>{
+    console.log(req.url)
     if(req.url === "/"){
         // the user wants the home page
         res.writeHead(200,{'content-type': 'text/html'});
